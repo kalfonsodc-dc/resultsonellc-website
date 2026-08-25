@@ -601,6 +601,41 @@ ul {
   }
 }
 
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+.media-item {
+  max-width: var(--container-width);
+  margin: 0 auto 50px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.media-item:last-child {
+  border-bottom: 0;
+}
+
+.media-item h2 {
+  font-size: 22px;
+}
+
+.media-item img {
+  max-width: 300px;
+  border-radius: var(--radius);
+  margin-top: 12px;
+}
+
 /* ==========================================================================
    Footer
    ========================================================================== */
