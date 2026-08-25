@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lawsuit Alert: The Top 5 Accessibility Failures That Get Your Website Sued - Results One LLC</title>
+<meta name="description" content="The majority of digital accessibility lawsuits stem from a few core, preventable technical failures. Here are the top five.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="site-header__logo" href="index.html">
+      <img src="assets/images/footer-logo.png" width="221" height="117" alt="Results One Logo">
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li class=""><a href="index.html">Home</a></li>
+        <li class="has-children ">
+          <a href="about.html">About</a>
+          <ul class="site-nav__submenu">
+            <li><a href="meet-our-team.html">Meet Our Team</a></li>
+            <li><a href="our-story.html">Our Story</a></li>
+            <li><a href="what-we-believe.html">What We Believe</a></li>
+            <li><a href="company-data.html">Company Data</a></li>
+            <li><a href="media.html">Media</a></li>
+          </ul>
+        </li>
+        <li class="has-children ">
+          <a href="index.html#our-services">Our Services</a>
+          <ul class="site-nav__submenu">
+            <li><a href="accessibility-learning-series.html">Accessibility Learning Series</a></li>
+            <li><a href="empowering-seniors.html">Empowering Seniors with AI</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li class="has-children">
+              <a href="human-capital-services.html">Human Capital Services</a>
+              <ul class="site-nav__submenu">
+                <li><a href="change-management.html">Change Management</a></li>
+                <li><a href="employee-resource-training.html">Employee Resource Training</a></li>
+                <li><a href="executive-coaching.html">Executive Coaching</a></li>
+                <li><a href="strategic-planning.html">Strategic Planning</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="current"><a href="blog.html">Blog</a></li>
+        <li class=""><a href="contact-us.html">Contact us</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-header__cta">
+      <a class="btn btn--small" href="consultation.html">Book a Free Consultation</a>
+    </div>
+
+    <button class="menu-toggle" type="button" aria-label="Menu toggle" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<main>
+
+<div class="page-header container">
+  <h1>Lawsuit Alert: The Top 5 Accessibility Failures That Get Your Website Sued</h1>
+</div>
+<section class="section">
+  <div class="container content-block">
+    <a class="back-to-blog" href="blog.html">&larr; Back to Blog</a>
+    <div class="post-hero-image">
+      <img src="assets/images/blog/ResultsOneBlog-LawsuitAlert.png" alt="Lawsuit Alert: The Top 5 Accessibility Failures That Get Your Website Sued">
+    </div>
+    
+<p>In the digital era, your website is considered a place of public accommodation. If a person with a disability cannot access your site, complete a purchase, or use a key service, it creates a potential legal liability under accessibility laws like the <strong>Americans with Disabilities Act (ADA)</strong> in the U.S.</p>
+<p>The majority of digital accessibility lawsuits stem from a few core, preventable technical failures. By fixing these five issues, you drastically reduce your legal risk and immediately make your site usable for millions more people.</p>
+<h2>1. Missing or Improper Alternative Text (Alt Text)</h2>
+<p>The most frequent and easiest-to-detect violation.</p>
+<ul>
+<li><strong>The Barrier</strong>: Images on your site&mdash;from product photos and charts to important icons&mdash;lack a text description in their code (Alt Text).</li>
+<li><strong>The Impact</strong>: A person who is blind and uses a screen reader cannot access the visual information. The screen reader simply skips the image or reads a useless file name like &ldquo;IMG_4920.jpg&rdquo;. This is particularly damaging on e-commerce sites where the image is the product.</li>
+<li><strong>The Fix (WCAG 1.1.1):</strong> Every informative image must have concise, descriptive Alt Text. Decorative images (like spacers or non-functional design elements) must have null Alt Text (alt=&ldquo;&rdquo;) so the screen reader knows to skip them.</li>
+</ul>
+<h2>2. Poor Keyboard Navigation</h2>
+<p>A foundational requirement for digital access.</p>
+<ul>
+<li><strong>The Barrier:</strong> Many interactive elements&mdash;links, buttons, drop-down menus, and forms&mdash;can only be successfully activated using a mouse pointer.</li>
+<li><strong>The Impact</strong>: Users with severe motor disabilities, or those who are blind (relying on the Tab key to move sequentially), cannot navigate the site. They get &ldquo;stuck&rdquo; or are unable to complete a critical action like adding an item to a cart or submitting a form. This often results in a keyboard trap, where a user tabs into a component but cannot tab out.</li>
+<li><strong>The Fix (WCAG 2.1.1):</strong> Ensure that every interactive element on the page can receive focus (using the Tab key) and that all functionality can be completed using the keyboard alone. The visual focus indicator (the visible outline around a focused element) must also be clearly visible.</li>
+</ul>
+<h2>3. Insufficient Color Contrast</h2>
+<p>An easily testable design flaw with major readability consequences.</p>
+<ul>
+<li><strong>The Barrier</strong>: The color of the text is too similar to the color of its background (e.g., light gray text on a white background).</li>
+<li><strong>The Impact</strong>: Users with low vision, color blindness, or age-related visual changes may find the text impossible to distinguish and read. This is a common failure point that is easily picked up by automated testing tools, making it a low-effort target for legal demand letters.</li>
+<li><strong>The Fix (WCAG 1.4.3):</strong> Text and images of text must have a minimum contrast ratio of 4.5:1 against the background. You must use an online contrast checker tool to verify all color combinations in your design.</li>
+</ul>
+<h2>4. Inaccessible Forms and Missing Labels</h2>
+<p>The most common failure point for critical conversion elements.</p>
+<ul>
+<li><strong>The Barrier</strong>: Input fields in forms (contact forms, checkout forms, login fields) are not properly associated with a visible &lt;label&gt; element in the code.</li>
+<li><strong>The Impact</strong>: Screen readers announce the presence of a blank input field but cannot tell the user what data is required (e.g., &ldquo;Enter your first name,&rdquo; &ldquo;Email address&rdquo;). The user is left unable to complete the transaction, application, or request for information.</li>
+<li><strong>The Fix (WCAG 3.3.2)</strong>: Ensure every input field is correctly associated with a programmatic label. When errors occur, the error messages must be clearly presented and correctly associated with the field so the screen reader user knows exactly what needs to be fixed.</li>
+</ul>
+<h2>5. Lack of Captions or Transcripts for Multimedia</h2>
+<p>Exclusion from audio or video content.</p>
+<ul>
+<li><strong>The Barrier</strong>: Videos, live streams, and audio podcasts are posted without corresponding text alternatives.</li>
+<li><strong>The Impact</strong>: Users who are deaf or hard of hearing are entirely excluded from the information, dialogue, or critical sound effects presented in the content. This is a common point of contention in lawsuits against businesses that rely heavily on video content, such as educational platforms or media companies.</li>
+<li><strong>The Fix (WCAG 1.2.1 &amp; 1.2.2):</strong> All pre-recorded video and audio content that contains dialogue or essential sound must include accurate closed captions and, ideally, a full transcript.</li>
+</ul>
+<h2>The Next Step: Audit Your Risk</h2>
+<p>The vast majority of digital accessibility lawsuits target these five failure points because they are easy to find, and they block a user from completing a core task on the website.</p>
+<p><strong>Don&rsquo;t wait for a demand letter.</strong> A small investment in an accessibility audit today is significantly cheaper than settling a lawsuit tomorrow.</p>
+<h2>Next Steps for You</h2>
+<p>Curious how your website measures up? <a href="https://calendly.com/meetwithkalfonsodc" target="_blank" rel="noopener"><strong>Schedule a free consultation</strong></a> to discuss an accessibility audit.</p>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div class="footer-logo">
+      <a href="index.html">
+        <img src="assets/images/footer-logo.png" width="221" height="117" alt="Results One Logo">
+      </a>
+      <div class="footer-badge">
+        <img src="assets/images/wcag2.1AA-blue-v.png" width="184" height="65" alt="W3C, WAI AA, WCAG 2.1">
+      </div>
+    </div>
+
+    <div>
+      <h4>Address</h4>
+      <p>2010 Spruce NW, Washington, DC 20012<br>United States<br><a href="tel:+12022531580"><strong>202.253.1580</strong></a></p>
+      <a class="btn btn--small" href="mailto:info@ResultsOneLLC.com" aria-label="Send mail to info@ResultsOneLLC.com">info@ResultsOneLLC.com</a>
+    </div>
+
+    <div>
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="digital-accessibility-testing-training.html">Digital Accessibility Testing and Training</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="human-capital-services.html">Human Capital Services</a></li>
+        <li><a href="disability-and-inclusion.html">Disability and Inclusion</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact-us.html">Contact us</a></li>
+        <li><a href="accessibility-statement.html">Accessibility Statement</a></li>
+      </ul>
+      <ul class="footer-social" aria-label="Social media links">
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100086062748691" target="_blank" rel="noopener">
+            <span class="visually-hidden">Facebook</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.17 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.77 8.44-4.94 8.44-9.94Z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/kim-greenfield-alfonso-mba" target="_blank" rel="noopener">
+            <span class="visually-hidden">LinkedIn</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-certs">
+    <div class="container">
+      <img src="assets/images/cbe-logo.png" alt="District of Columbia Certified Business Enterprise (CBE)">
+      <img src="assets/images/crmsdc-logo.jpeg" alt="Capital Region Minority Supplier Development Council">
+      <img src="assets/images/certified-women-logo.png" alt="Certified Women Owned Business">
+      <img src="assets/images/metropolitan-washington-logo.png" alt="Metropolitan Washington Airports Authority">
+      <img src="assets/images/LSBE-300x300-1.png" alt="LSBE, Local Small Business Enterprise Certified">
+      <img src="assets/images/DBE-LOGO.png" alt="DBE, Disadvantaged Business Enterprise Certified">
+      <img src="assets/images/DOBE-Logo-Black.png" alt="Disability-owned in Business">
+    </div>
+  </div>
+
+  <div class="footer-bottom container">
+    <p>Copyright &copy; 2026 Results One LLC</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
