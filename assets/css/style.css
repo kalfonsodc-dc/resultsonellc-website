@@ -440,6 +440,22 @@ ul {
   object-fit: cover;
 }
 
+.service-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 940 / 788;
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  background: var(--color-bg-alt);
+}
+
+.service-card__icon img {
+  width: 35%;
+  aspect-ratio: auto;
+  border-radius: 0;
+}
+
 .service-card h3 {
   font-size: 18px;
   margin: 0;
@@ -677,6 +693,25 @@ ul {
 
 .accordion-item p {
   padding: 0 4px 18px;
+  margin: 0;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.callout {
+  background: var(--color-bg-alt);
+  border-left: 4px solid var(--color-primary);
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  margin: 20px 0;
+}
+
+.callout p {
   margin: 0;
 }
 
