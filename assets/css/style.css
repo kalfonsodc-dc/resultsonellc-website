@@ -513,6 +513,31 @@ ul {
   cursor: pointer;
 }
 
+/* ---- Testimonials page ---- */
+.testimonial-list {
+  display: grid;
+  gap: 30px;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: var(--color-bg-alt);
+  border-radius: var(--radius);
+  padding: 30px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+}
+
+.testimonial-card .testimonial-card__name {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0;
+}
+
 /* Partners logo grid */
 .partners {
   text-align: center;
