@@ -960,7 +960,7 @@ ul {
   gap: 30px;
 }
 
-.footer-main h3 {
+.footer-main h2 {
   font-family: var(--font-body);
   text-transform: uppercase;
   font-size: 14px;
