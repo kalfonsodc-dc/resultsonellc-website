@@ -440,22 +440,6 @@ ul {
   object-fit: cover;
 }
 
-.service-card__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 940 / 788;
-  border-radius: var(--radius);
-  margin-bottom: 16px;
-  background: var(--color-bg-alt);
-}
-
-.service-card__icon img {
-  width: 35%;
-  aspect-ratio: auto;
-  border-radius: 0;
-}
-
 .service-card h3 {
   font-size: 18px;
   margin: 0;
