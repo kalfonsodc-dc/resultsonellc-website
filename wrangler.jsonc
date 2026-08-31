@@ -2,4 +2,7 @@
   "name": "resultsonellc-website",
   "compatibility_date": "2026-08-24",
   "assets": { "directory": "." }
+  "routes": [
+    { "pattern": "www.resultsonellc.com", "custom_domain": true }
+  ]
 }
