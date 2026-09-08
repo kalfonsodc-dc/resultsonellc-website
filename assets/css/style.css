@@ -121,6 +121,27 @@ ul {
   white-space: nowrap;
 }
 
+/* ---- Skip link (WCAG 2.4.1 Bypass Blocks) ---- */
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 12px 20px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom-right-radius: var(--radius);
+  transform: translateY(-120%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 3px solid var(--color-white);
+  outline-offset: -6px;
+}
+
 /* ---- Buttons ---- */
 .btn {
   display: inline-block;
@@ -288,7 +309,8 @@ ul {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /* 0.6 keeps white text at >=4.5:1 even over a near-white slide image */
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .hero__slide.is-active {
@@ -1035,6 +1057,7 @@ ul {
   text-align: left;
 }
 
+.cta-banner h2,
 .cta-banner h3 {
   color: var(--color-white);
   font-size: 20px;
@@ -1437,5 +1460,61 @@ ul {
 
   .footer-social {
     justify-content: center;
+  }
+}
+
+/* ---- Carousel pause/play controls (WCAG 2.2.2 Pause, Stop, Hide) ---- */
+.hero__pause {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: rgba(0, 0, 0, 0.75);
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hero__pause:hover,
+.hero__pause:focus {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.testimonial-carousel__pause {
+  background: none;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  border-radius: var(--radius);
+  padding: 6px 14px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.testimonial-carousel__pause:hover,
+.testimonial-carousel__pause:focus {
+  background: var(--color-bg-alt);
+}
+
+/* ---- Reduced motion (WCAG 2.3.3) ---- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

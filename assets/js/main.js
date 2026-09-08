@@ -5,6 +5,52 @@ document.addEventListener('DOMContentLoaded', function () {
   initTestimonialCarousel();
 });
 
+function prefersReducedMotion() {
+  return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
+/**
+ * Auto-advance with a visible pause/play control (WCAG 2.2.2 Pause, Stop, Hide).
+ * Starts paused when the visitor has asked for reduced motion (WCAG 2.3.3).
+ * Returns a `restart` hook so manual navigation can reset the timer without
+ * resuming a slideshow the visitor deliberately paused.
+ */
+function createAutoplay(options) {
+  var advance = options.advance;
+  var button = options.button;
+  var label = options.label;
+  var interval = options.interval || 6000;
+
+  var timer = null;
+  var playing = false;
+
+  function play() {
+    clearInterval(timer);
+    timer = setInterval(advance, interval);
+    playing = true;
+    button.textContent = 'Pause';
+    button.setAttribute('aria-label', 'Pause the ' + label);
+  }
+
+  function pause() {
+    clearInterval(timer);
+    timer = null;
+    playing = false;
+    button.textContent = 'Play';
+    button.setAttribute('aria-label', 'Play the ' + label);
+  }
+
+  button.addEventListener('click', function () {
+    if (playing) { pause(); } else { play(); }
+  });
+
+  if (prefersReducedMotion()) { pause(); } else { play(); }
+
+  return {
+    restart: function () { if (playing) play(); }
+  };
+}
+
 function initMobileNav() {
   var header = document.querySelector('.site-header');
   var toggle = document.querySelector('.menu-toggle');
@@ -49,6 +95,7 @@ function initHeroSlider() {
     if (i === 0) dot.classList.add('is-active');
     dot.addEventListener('click', function () {
       goTo(i);
+      autoplay.restart();
     });
     dotsWrap.appendChild(dot);
     dots.push(dot);
@@ -62,15 +109,19 @@ function initHeroSlider() {
     dots[current].classList.add('is-active');
   }
 
-  if (prevBtn) prevBtn.addEventListener('click', function () { goTo(current - 1); resetAutoplay(); });
-  if (nextBtn) nextBtn.addEventListener('click', function () { goTo(current + 1); resetAutoplay(); });
+  var pauseBtn = document.createElement('button');
+  pauseBtn.type = 'button';
+  pauseBtn.className = 'hero__pause';
+  hero.appendChild(pauseBtn);
 
-  var timer;
-  function resetAutoplay() {
-    clearInterval(timer);
-    timer = setInterval(function () { goTo(current + 1); }, 6000);
-  }
-  resetAutoplay();
+  var autoplay = createAutoplay({
+    advance: function () { goTo(current + 1); },
+    button: pauseBtn,
+    label: 'slideshow'
+  });
+
+  if (prevBtn) prevBtn.addEventListener('click', function () { goTo(current - 1); autoplay.restart(); });
+  if (nextBtn) nextBtn.addEventListener('click', function () { goTo(current + 1); autoplay.restart(); });
 }
 
 function initTestimonialCarousel() {
@@ -78,6 +129,7 @@ function initTestimonialCarousel() {
   if (!wrap) return;
 
   var items = Array.prototype.slice.call(wrap.querySelectorAll('.testimonial'));
+  var navWrap = wrap.querySelector('.testimonial-carousel__nav');
   var prevBtn = wrap.querySelector('.testimonial-carousel__nav--prev');
   var nextBtn = wrap.querySelector('.testimonial-carousel__nav--next');
   if (items.length < 2) return;
@@ -90,13 +142,21 @@ function initTestimonialCarousel() {
     items[current].classList.add('is-active');
   }
 
-  if (prevBtn) prevBtn.addEventListener('click', function () { goTo(current - 1); resetAutoplay(); });
-  if (nextBtn) nextBtn.addEventListener('click', function () { goTo(current + 1); resetAutoplay(); });
-
-  var timer;
-  function resetAutoplay() {
-    clearInterval(timer);
-    timer = setInterval(function () { goTo(current + 1); }, 6000);
+  var pauseBtn = document.createElement('button');
+  pauseBtn.type = 'button';
+  pauseBtn.className = 'testimonial-carousel__pause';
+  if (navWrap) {
+    navWrap.appendChild(pauseBtn);
+  } else {
+    wrap.appendChild(pauseBtn);
   }
-  resetAutoplay();
+
+  var autoplay = createAutoplay({
+    advance: function () { goTo(current + 1); },
+    button: pauseBtn,
+    label: 'testimonial carousel'
+  });
+
+  if (prevBtn) prevBtn.addEventListener('click', function () { goTo(current - 1); autoplay.restart(); });
+  if (nextBtn) nextBtn.addEventListener('click', function () { goTo(current + 1); autoplay.restart(); });
 }
