@@ -1,0 +1,59 @@
+# Results One LLC
+
+> Results One LLC is a Washington, DC-based consulting firm specializing in
+> digital accessibility, disability inclusion, workforce and leadership
+> development, and AI strategy for nonprofits and public-sector organizations.
+> The firm helps organizations meet ADA, Section 508, and WCAG 2.1 Level AA
+> requirements and build more inclusive, higher-performing workplaces.
+
+Contact: info@ResultsOneLLC.com | +1 202-253-1580 | https://www.resultsonellc.com/
+Service area: United States (headquartered in Washington, DC)
+
+## Services
+
+- [Our Services](https://www.resultsonellc.com/services): Index of every service area.
+- [Digital Accessibility Testing & Training](https://www.resultsonellc.com/digital-accessibility-testing-training): WCAG 2.1 AA and Section 508 audits, remediation guidance, and staff training.
+- [Disability Inclusion Services](https://www.resultsonellc.com/disability-and-inclusion): Disability inclusion strategy, policy, and culture work.
+- [Leadership for Organizational Success](https://www.resultsonellc.com/leadership-for-organizational-success): Parent service covering INSIGHT and leadership development.
+- [Leadership Development Training](https://www.resultsonellc.com/leadership-development-training): Courses for current and emerging leaders.
+- [INSIGHT](https://www.resultsonellc.com/insight): Results One's leadership insight offering.
+- [Executive Coaching](https://www.resultsonellc.com/executive-coaching): One-on-one coaching for executives and senior leaders.
+- [Professional Development Training](https://www.resultsonellc.com/training): Customized, cost-effective training programs.
+- [Workforce Development Training](https://www.resultsonellc.com/human-capital-services): Workforce capacity building.
+- [Employee Resource Training](https://www.resultsonellc.com/employee-resource-training): Training for employee resource groups.
+- [Strategic Planning](https://www.resultsonellc.com/strategic-planning): Facilitated organizational strategy work.
+- [Change Management](https://www.resultsonellc.com/change-management): Support for organizational transitions.
+- [AI Strategy and Enablement for Nonprofits](https://www.resultsonellc.com/ai-strategy-nonprofits): Practical AI strategy, workflows, policy, and training for mission-driven organizations.
+
+## About
+
+- [About Us](https://www.resultsonellc.com/about)
+- [Our Story](https://www.resultsonellc.com/our-story)
+- [What We Believe](https://www.resultsonellc.com/what-we-believe)
+- [Meet Our Team](https://www.resultsonellc.com/meet-our-team)
+- [Testimonials](https://www.resultsonellc.com/testimonials)
+- [Company Data](https://www.resultsonellc.com/company-data): DUNS, NAICS, CAGE, and certification details.
+- [Accessibility Statement](https://www.resultsonellc.com/accessibility-statement)
+
+## Resources
+
+- [Resources](https://www.resultsonellc.com/resources): Index of all resources.
+- [Blog](https://www.resultsonellc.com/blog): Articles on digital accessibility law, testing, and practice.
+- [Accessibility Learning Series](https://www.resultsonellc.com/accessibility-learning-series): E-books on building accessible content.
+- [AI Grant Research Toolkit](https://www.resultsonellc.com/grant-research-toolkit): Toolkit for nonprofits researching funding opportunities.
+- [Free Tools](https://www.resultsonellc.com/free-tools)
+- [The Accessibility Minute](https://www.resultsonellc.com/the-accessibility-minute): Newsletter.
+- [Media](https://www.resultsonellc.com/media): Podcasts, articles, and newsletters.
+- [Podcast](https://www.resultsonellc.com/podcast): Digital accessibility podcast episodes.
+- [The Digital Accessibility Lady](https://www.resultsonellc.com/the-digital-accessibility-lady)
+
+## Contact
+
+- [Contact Us](https://www.resultsonellc.com/contact-us)
+- [Book a Free Consultation](https://www.resultsonellc.com/consultation)
+- [Accessibility Consultation](https://www.resultsonellc.com/accessibility-consultation)
+- [Work with Results One](https://www.resultsonellc.com/work-with-results-one)
+
+## Optional
+
+- [Sitemap](https://www.resultsonellc.com/sitemap.xml)
