@@ -13,9 +13,9 @@ function prefersReducedMotion() {
  * Auto-advance with a visible pause/play control (WCAG 2.2.2 Pause, Stop, Hide).
  * Starts paused when the visitor has asked for reduced motion (WCAG 2.3.3).
  *
- * `userPaused` is tracked separately from `playing` so that hovering or tabbing
- * through the carousel can suspend motion temporarily without ever resuming a
- * carousel the visitor deliberately stopped.
+ * A deliberate pause is tracked separately from the timer, so hovering or
+ * tabbing through the carousel can suspend motion temporarily without ever
+ * resuming a carousel the visitor stopped on purpose.
  */
 function createAutoplay(options) {
   var advance = options.advance;
@@ -25,19 +25,16 @@ function createAutoplay(options) {
   var interval = options.interval || 6000;
 
   var timer = null;
-  var playing = false;
   var userPaused = prefersReducedMotion();
 
   function start() {
     clearInterval(timer);
     timer = setInterval(advance, interval);
-    playing = true;
   }
 
   function stop() {
     clearInterval(timer);
     timer = null;
-    playing = false;
   }
 
   function render() {
