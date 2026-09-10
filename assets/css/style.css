@@ -1313,6 +1313,28 @@ ul {
   list-style: none;
 }
 
+/* The email link is marked up as a button, but the button's background is the
+   same purple as the footer, so it reads as plain text with a 20px left
+   padding that pushed it out of line with the heading above. Strip the button
+   box here so it aligns with the "Contact" heading and matches the links in
+   the other footer columns. */
+.footer-main .btn {
+  display: inline;
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
+.footer-main .btn:hover,
+.footer-main .btn:focus {
+  background: none;
+  color: var(--color-secondary);
+}
+
 .footer-main li {
   margin-bottom: 8px;
 }
