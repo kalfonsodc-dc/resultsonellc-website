@@ -884,18 +884,6 @@ ul {
   margin-bottom: 0;
 }
 
-.map-embed {
-  max-width: var(--container-width);
-  margin: 0 auto;
-}
-
-.map-embed iframe {
-  width: 100%;
-  height: 320px;
-  border: 0;
-  border-radius: var(--radius);
-}
-
 /* ---- Consultation hub page ---- */
 .consultation-options {
   display: grid;
