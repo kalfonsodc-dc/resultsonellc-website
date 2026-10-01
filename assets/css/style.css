@@ -116,8 +116,12 @@ ul {
   position: absolute;
   width: 1px;
   height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  clip-path: inset(50%);
   white-space: nowrap;
 }
 
@@ -145,6 +149,8 @@ ul {
 /* ---- Buttons ---- */
 .btn {
   display: inline-block;
+  max-width: 100%;
+  overflow-wrap: break-word;
   font-family: var(--font-body);
   font-weight: 600;
   text-transform: uppercase;
@@ -252,6 +258,14 @@ ul {
 .site-nav__list .has-children:hover > .site-nav__submenu,
 .site-nav__list .has-children:focus-within > .site-nav__submenu {
   display: block;
+}
+
+/* WCAG 1.4.13 Dismissible: the submenu opens on :hover, and CSS alone cannot
+   react to Escape. main.js marks the item dismissed on Escape and clears the
+   mark when the pointer leaves, so hovering works again afterwards. Equal
+   specificity to the hover rule above, so it must stay after it. */
+.site-nav__list .has-children[data-hover-dismissed="true"] > .site-nav__submenu {
+  display: none;
 }
 
 .site-nav__submenu a {
@@ -1014,6 +1028,7 @@ ul {
 
 .criteria-row__badge {
   flex: 0 0 auto;
+  max-width: 100%;
   background: var(--color-bg-alt);
   color: var(--color-primary);
   font-weight: 700;
@@ -1027,6 +1042,21 @@ ul {
 
 .criteria-row p {
   margin: 0;
+  min-width: 0;
+}
+
+/* WCAG 1.4.10 Reflow: at 320px the 140px badge plus gap and padding left too
+   little room for the text, so the row overflowed. Stack it instead. */
+@media (max-width: 600px) {
+  .criteria-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .criteria-row__badge {
+    min-width: 0;
+  }
 }
 
 .process-grid {
@@ -1250,6 +1280,25 @@ ul {
   width: 100%;
   border-collapse: collapse;
   margin: 24px 0;
+}
+
+/* A data table may require horizontal scrolling under 1.4.10, but it has to
+   scroll inside its own box -- otherwise the whole page scrolls and the
+   surrounding prose is dragged off-screen too. */
+.table-scroll {
+  overflow-x: auto;
+  margin: 24px 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-scroll table {
+  margin: 0;
+  min-width: 480px;
+}
+
+.table-scroll:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 .content-block th,
