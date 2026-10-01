@@ -1511,6 +1511,10 @@ ul {
     display: block;
   }
 
+  .site-header.is-open .site-nav__submenu .has-children {
+    flex-wrap: wrap;
+  }
+
   /* Keep the primary conversion path available on phones (was display:none). */
   .site-header.is-open .site-header__cta {
     display: block;
@@ -1668,6 +1672,37 @@ legend {
 
 .submenu-toggle[aria-expanded="true"]::after {
   transform: rotate(180deg);
+}
+
+/* Inside a dropdown the link is display:block, so the injected disclosure
+   button was pushed onto a line of its own, leaving a blank row and an
+   orphaned caret under Leadership for Organizational Success and Workforce
+   Development Training. Lay the pair out as a row instead.
+
+   Desktop keeps the row on one line so the caret stays beside even the
+   longest label, which the dropdown can accommodate because it is absolutely
+   positioned and widens to fit. On mobile that nested list becomes
+   position:static, so the mobile block re-enables wrapping and the
+   full-width basis below drops it onto its own line instead of letting it
+   sit beside the link as a third flex item. */
+.site-nav__submenu .has-children {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.site-nav__submenu .has-children > a {
+  flex: 1 1 auto;
+}
+
+.site-nav__submenu .has-children > .submenu-toggle {
+  flex: 0 0 auto;
+  padding: 8px 20px 8px 0;
+  margin-left: 0;
+}
+
+.site-nav__submenu .has-children > .site-nav__submenu {
+  flex: 0 0 100%;
 }
 
 /* The disclosure button replaces the CSS-only caret on parent links. */
