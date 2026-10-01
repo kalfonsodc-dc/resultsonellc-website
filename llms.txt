@@ -12,7 +12,7 @@ Service area: United States
 ## Services
 
 - [Our Services](https://www.resultsonellc.com/services): Index of every service area.
-- [ADA Training and Consultation](https://www.resultsonellc.com/ada-training-and-consultation): Title II and Title III consulting, accommodation process support, policy review, and staff training.
+- [ADA Training & Consultation](https://www.resultsonellc.com/ada-training-and-consultation): Interactive ADA training and consultation from two certified ADA trainers: fundamentals, accommodations, accessible customer service, communication, and digital accessibility.
 - [Digital Accessibility Testing & Training](https://www.resultsonellc.com/digital-accessibility-testing-training): WCAG 2.1 AA and Section 508 audits, remediation guidance, and staff training.
 - [Disability Inclusion Services](https://www.resultsonellc.com/disability-and-inclusion): Disability inclusion strategy, policy, and culture work.
 - [Leadership for Organizational Success](https://www.resultsonellc.com/leadership-for-organizational-success): Parent service covering INSIGHT and leadership development.
