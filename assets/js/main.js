@@ -134,6 +134,23 @@ function initNav() {
     li.addEventListener('focusout', function (e) {
       if (!li.contains(e.relatedTarget)) setOpen(false);
     });
+
+    // WCAG 1.4.13 Dismissible: clear the Escape mark once the pointer leaves,
+    // so hovering the item again re-opens the submenu as usual.
+    li.addEventListener('mouseleave', function () {
+      li.removeAttribute('data-hover-dismissed');
+    });
+  });
+
+  // The submenu also opens on CSS :hover, which Escape cannot reach on its
+  // own. Mark whatever the pointer is currently over as dismissed; the
+  // stylesheet hides it while the mark is present.
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape' && e.key !== 'Esc') return;
+    var hovered = document.querySelectorAll('.site-nav .has-children:hover');
+    for (var i = 0; i < hovered.length; i++) {
+      hovered[i].setAttribute('data-hover-dismissed', 'true');
+    }
   });
 }
 
