@@ -1515,6 +1515,11 @@ ul {
     flex-wrap: wrap;
   }
 
+  /* Without hover, this button is the only way to open a nested menu. */
+  .site-header.is-open .site-nav__submenu .submenu-toggle {
+    display: inline-block;
+  }
+
   /* Keep the primary conversion path available on phones (was display:none). */
   .site-header.is-open .site-header__cta {
     display: block;
@@ -1699,6 +1704,14 @@ legend {
   flex: 0 0 auto;
   padding: 8px 20px 8px 0;
   margin-left: 0;
+}
+
+/* No caret inside the dropdown on desktop: hover opens the flyout for pointer
+   users and :focus-within opens it for keyboard users, so the button has
+   nothing to add there. It stays on mobile, below, where there is no hover and
+   it is the only way into a nested menu. */
+.site-nav__submenu .submenu-toggle {
+  display: none;
 }
 
 .site-nav__submenu .has-children > .site-nav__submenu {
