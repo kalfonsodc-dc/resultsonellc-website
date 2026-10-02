@@ -355,6 +355,9 @@ ul {
   padding: 40px 20px;
 }
 
+/* Slide one carries the page's h1; the other slides stay h2. Both need the
+   same treatment, since any of them can be the visible heading. */
+.hero__content h1,
 .hero__content h2 {
   color: var(--color-white);
   font-size: 40px;
@@ -453,6 +456,12 @@ ul {
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
+}
+
+/* This heading stepped down from h1 to h2 so the page has a single h1; it
+   keeps its original size so the page renders unchanged. */
+.intro h2 {
+  font-size: 42px;
 }
 
 .value-props {
