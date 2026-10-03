@@ -48,6 +48,10 @@ Service area: United States
 - [Podcast](https://www.resultsonellc.com/podcast): Digital accessibility podcast episodes.
 - [The Digital Accessibility Lady](https://www.resultsonellc.com/the-digital-accessibility-lady)
 
+## Shop
+
+- [Shop](https://www.resultsonellc.com/shop): All appointment calendars and products in one place, hosted at shop.resultsonellc.com.
+
 ## Contact
 
 - [Contact Us](https://www.resultsonellc.com/contact-us)

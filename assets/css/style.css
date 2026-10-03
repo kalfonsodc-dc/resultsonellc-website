@@ -205,10 +205,14 @@ ul {
   justify-content: center;
 }
 
+/* Seven top-level items. The gap came down from 28px and the labels are kept
+   on one line each, which is what lets the row still fit at common desktop
+   widths; without the nowrap a label breaks mid-phrase and pushes the row to
+   wrap much earlier. */
 .site-nav__list {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 24px;
   list-style: none;
 }
 
@@ -223,6 +227,7 @@ ul {
   text-transform: none;
   padding: 8px 0;
   display: inline-block;
+  white-space: nowrap;
 }
 
 .site-nav__list > li > a:hover,
