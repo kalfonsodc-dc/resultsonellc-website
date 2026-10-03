@@ -64,7 +64,10 @@ a {
   text-decoration: none;
 }
 
-.content-block a:not(.btn) {
+/* Inline links need more than colour to be distinguishable (WCAG 1.4.1).
+   Card bodies carry prose too, so they get the same underline. */
+.content-block a:not(.btn),
+.step-card a:not(.btn) {
   text-decoration: underline;
 }
 
