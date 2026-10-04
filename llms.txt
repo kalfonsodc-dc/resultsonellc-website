@@ -13,9 +13,18 @@ Service area: United States
 
 - [Our Services](https://www.resultsonellc.com/services): Index of every service area.
 - [ADA Training & Consultation](https://www.resultsonellc.com/ada-training-and-consultation): Interactive ADA training and consultation from two certified ADA trainers: fundamentals, accommodations, accessible customer service, communication, and digital accessibility.
-- [Digital Accessibility Testing & Training](https://www.resultsonellc.com/digital-accessibility-testing-training): WCAG 2.1 AA and Section 508 audits, remediation guidance, and staff training.
+- [Digital Accessibility Services](https://www.resultsonellc.com/digital-accessibility-testing-training): Parent service covering nine digital accessibility offerings, from audits through video accessibility.
+  - [Accessibility Audits & Assessments](https://www.resultsonellc.com/accessibility-audits-and-assessments): Automated, manual and assistive technology testing of websites, mobile apps and digital documents against WCAG, Section 508 and applicable ADA requirements, with a prioritized remediation report.
+  - [Remediation Support](https://www.resultsonellc.com/remediation-support): Hands-on support for correcting the barriers testing finds, across websites, digital content and electronic documents including PDFs, Word files, PowerPoint decks and forms.
+  - [Accessibility Training & Workshops](https://www.resultsonellc.com/accessibility-training-and-workshops): Customized sessions for executives, developers, content creators, communications and procurement teams, delivered as workshops, Lunch & Learns, virtual training or leadership briefings.
+  - [Ongoing Compliance Monitoring](https://www.resultsonellc.com/ongoing-compliance-monitoring): Monthly, quarterly or risk-based monitoring: automated scans, targeted manual testing, regression testing and periodic reporting so new barriers are caught early.
+  - [VPAT/ACR Development](https://www.resultsonellc.com/vpat-acr-development): Evaluation of digital products and preparation of an Accessibility Conformance Report that gives procurement professionals meaningful information, not marketing copy.
+  - [Policy & Strategy Consulting](https://www.resultsonellc.com/policy-and-strategy-consulting): Policies, governance, roadmaps, procurement requirements and accessibility statements that turn individual projects into an organization-wide accessibility program.
+  - [Community & User Testing](https://www.resultsonellc.com/community-and-user-testing): Task-based testing with people who use assistive technology, revealing usability barriers that automated tools and technical conformance checks alone do not capture.
+  - [AI & Accessibility](https://www.resultsonellc.com/ai-and-accessibility): Training and consultation on where AI removes barriers for people with disabilities — and on accuracy, bias, privacy and the risk of assuming automation is accessible.
+  - [Video & Multimedia Accessibility](https://www.resultsonellc.com/video-and-multimedia-accessibility): Audio description, closed captioning, caption and description remediation, accessible transcripts, and phased remediation plans for large video libraries.
 - [Disability Inclusion Services](https://www.resultsonellc.com/disability-and-inclusion): Disability inclusion strategy, policy, and culture work.
-- [Leadership for Organizational Success](https://www.resultsonellc.com/leadership-for-organizational-success): Parent service covering INSIGHT and leadership development.
+- [Leadership for Organizational Success](https://www.resultsonellc.com/leadership-for-organizational-success): Parent service covering INSIGHT, leadership development, change management, executive coaching, and strategic planning.
 - [Leadership Development Training](https://www.resultsonellc.com/leadership-development-training): Courses for current and emerging leaders.
 - [INSIGHT](https://www.resultsonellc.com/insight): Results One's leadership insight offering.
 - [Executive Coaching](https://www.resultsonellc.com/executive-coaching): One-on-one coaching for executives and senior leaders.
