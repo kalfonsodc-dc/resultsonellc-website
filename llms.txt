@@ -51,7 +51,6 @@ Service area: United States
 - [Blog](https://www.resultsonellc.com/blog): Articles on digital accessibility law, testing, and practice.
 - [Accessibility Learning Series](https://www.resultsonellc.com/accessibility-learning-series): E-books on building accessible content.
 - [AI Grant Research Toolkit](https://www.resultsonellc.com/grant-research-toolkit): Toolkit for nonprofits researching funding opportunities.
-- [Free Tools](https://www.resultsonellc.com/free-tools)
 - [The Accessibility Minute](https://www.resultsonellc.com/the-accessibility-minute): Newsletter.
 - [Media](https://www.resultsonellc.com/media): Podcasts, articles, and newsletters.
 - [Podcast](https://www.resultsonellc.com/podcast): Digital accessibility podcast episodes.
