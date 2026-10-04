@@ -51,6 +51,7 @@ Service area: United States
 ## Shop
 
 - [Shop](https://www.resultsonellc.com/shop): All appointment calendars and products in one place, hosted at shop.resultsonellc.com. Books are listed on the Products List page (https://shop.resultsonellc.com/products-list).
+- [Books](https://www.resultsonellc.com/books): What Results One publishes, including the Accessibility Learning Series e-books.
 
 ## Contact
 

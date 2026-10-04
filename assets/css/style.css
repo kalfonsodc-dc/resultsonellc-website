@@ -208,14 +208,14 @@ ul {
   justify-content: center;
 }
 
-/* Seven top-level items. The gap came down from 28px and the labels are kept
-   on one line each, which is what lets the row still fit at common desktop
-   widths; without the nowrap a label breaks mid-phrase and pushes the row to
-   wrap much earlier. */
+/* Eight top-level items. The gap has come down from 28px to 16px and the
+   labels are kept on one line each, which together are what let the row still
+   fit at common desktop widths; without the nowrap a label breaks mid-phrase
+   and pushes the row to wrap much earlier. */
 .site-nav__list {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
   list-style: none;
 }
 
