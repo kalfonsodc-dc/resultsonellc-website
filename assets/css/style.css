@@ -1744,3 +1744,158 @@ legend {
 .site-nav__list .has-children > .site-nav__submenu[data-open="true"] {
   display: block;
 }
+
+/* ---------------------------------------------------------------------------
+   Networking Training & Consultation landing page
+   Uses the existing palette. The green is only ever a background behind black
+   text: #62c97b with white text is about 2.1:1 and would fail 1.4.3, so every
+   button stays on --color-primary, which passes.
+   --------------------------------------------------------------------------- */
+
+.lead-promise {
+  font-family: var(--font-heading);
+  font-size: 30px;
+  line-height: 1.25;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.section__subtitle {
+  font-size: 20px;
+  margin-top: -8px;
+}
+
+/* before/after pair in the hero */
+.shift-cards {
+  margin: 28px 0;
+  max-width: 560px;
+}
+.shift-card {
+  border-radius: var(--radius);
+  padding: 18px 22px;
+}
+.shift-card--before {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+}
+.shift-card--after {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+.shift-card__label {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+.shift-card__quote {
+  font-family: var(--font-heading);
+  font-size: 21px;
+  margin: 0;
+}
+.shift-card--before .shift-card__quote { text-decoration: line-through; }
+.shift-card__arrow {
+  text-align: center;
+  font-size: 26px;
+  margin: 10px 0;
+  color: var(--color-primary);
+}
+
+/* highlighted card inside the services grid */
+.step-card--feature {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+.step-card__quote {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  margin: 0;
+}
+.step-card--feature .btn {
+  background: var(--color-white);
+  color: var(--color-primary);
+  align-self: flex-start;
+}
+
+/* dark signature-training band */
+.section--dark {
+  background: #2d1b38;
+  color: var(--color-white);
+}
+.section--dark h2,
+.section--dark .eyebrow { color: var(--color-white); }
+.section--dark a:not(.btn) { color: #e3c7f0; }
+
+.takeaway-grid {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+.takeaway-grid li {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+.takeaway__num {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+/* green band -- black text only, see note above */
+.section--green {
+  background: var(--color-accent-green);
+  color: var(--color-text);
+}
+.section--green h2,
+.section--green .eyebrow { color: var(--color-text); }
+
+.callout--primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-left-color: #4e1b64;
+}
+
+.approach-list { margin: 20px 0 0; }
+.approach-list dt {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  color: var(--color-primary);
+  margin-top: 18px;
+}
+.approach-list dd { margin: 4px 0 0; }
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  box-shadow: none;
+}
+.btn--outline:hover,
+.btn--outline:focus { background: var(--color-bg-alt); }
+
+@media (max-width: 900px) {
+  .takeaway-grid { grid-template-columns: repeat(2, 1fr); }
+  .lead-promise { font-size: 25px; }
+}
+@media (max-width: 560px) {
+  .takeaway-grid { grid-template-columns: 1fr; }
+}

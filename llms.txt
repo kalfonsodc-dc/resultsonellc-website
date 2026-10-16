@@ -13,6 +13,7 @@ Service area: United States
 
 - [Our Services](https://www.resultsonellc.com/services): Index of every service area.
 - [ADA Training & Consultation](https://www.resultsonellc.com/ada-training-and-consultation): Interactive ADA training and consultation from two certified ADA trainers: fundamentals, accommodations, accessible customer service, communication, and digital accessibility.
+- [Networking Training & Consultation](https://www.resultsonellc.com/networking-training-and-consultation): Workshops, event-specific preparation, GovCon conversation practice, and one-to-one networking strategy; includes the "Oh, the People You'll Meet!" signature training.
 - [Digital Accessibility Services](https://www.resultsonellc.com/digital-accessibility-testing-training): Parent service covering nine digital accessibility offerings, from audits through video accessibility.
   - [Accessibility Audits & Assessments](https://www.resultsonellc.com/accessibility-audits-and-assessments): Automated, manual and assistive technology testing of websites, mobile apps and digital documents against WCAG, Section 508 and applicable ADA requirements, with a prioritized remediation report.
   - [Accessibility Remediation Support](https://www.resultsonellc.com/remediation-support): Document remediation for PDF, Word, PowerPoint and forms; website and application remediation support; phased projects for large document libraries; retesting and validation. Findings from another vendor can be used as the basis.
