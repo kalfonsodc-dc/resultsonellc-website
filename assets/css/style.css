@@ -988,8 +988,20 @@ ul {
   margin-top: auto;
 }
 
+.pricing-cards--four { grid-template-columns: repeat(4, 1fr); }
+
+.pricing-card__unit {
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+@media (max-width: 1023px) {
+  .pricing-cards--four { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 767px) {
-  .pricing-cards {
+  .pricing-cards,
+  .pricing-cards--four {
     grid-template-columns: 1fr;
   }
 }
